@@ -41,7 +41,7 @@ public class UI {
 		 System.out.flush(); 
 		} 
 	
-	public static ChessPosition readChessposition(Scanner sc) {
+	public static ChessPosition readChessPosition(Scanner sc) {
 		try {
 			String s = sc.nextLine();
 			char column = s.charAt(0);
@@ -53,7 +53,7 @@ public class UI {
 		}
 	}
 	
-	public static void PrintMatch(ChessMatch chessMatch, List<ChessPiece> captured) {
+	public static void printMatch(ChessMatch chessMatch, List<ChessPiece> captured) {
 		printBoard(chessMatch.getPieces());
 		System.out.println();
 		printCapturedPieces(captured);
